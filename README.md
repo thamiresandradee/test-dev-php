@@ -1,5 +1,5 @@
 # CodeIgniter 3 com migração e propagação de banco de dados
-## About
+## Sobre
 Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e propagação de banco de dados.
 
 ### Recursos
@@ -7,7 +7,33 @@ Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e pr
 - [x] CodeIgniter Database seeding with CodeIgniter Command Line Interface (CLI)
 - [x] [Faker PHP Library](https://github.com/fzaninotto/Faker)
 
-### ToDo
+### Configuração banco de dados / localhost
+- application/config/config.php
+  | $config['base_url'] = 'http://localhost/teste_arizona/'; |
+
+- application/config/database.php
+  | $db['default'] = array(
+	| 'dsn'	=> '',
+	| 'hostname' => 'localhost',
+	| 'username' => 'root',
+	| 'password' => '',
+	| 'database' => 'test-arizona',
+	| 'dbdriver' => 'mysqli',
+	| 'dbprefix' => '',
+	| 'pconnect' => FALSE,
+	| 'db_debug' => (ENVIRONMENT !== 'production'),
+	| 'cache_on' => FALSE,
+	| 'cachedir' => '',
+	| 'char_set' => 'utf8',
+	| 'dbcollat' => 'utf8_general_ci',
+	| 'swap_pre' => '',
+	| 'encrypt' => FALSE,
+	| 'compress' => FALSE,
+	| 'stricton' => TRUE, // Para hospedagem
+	| 'failover' => array(),
+	| 'save_queries' => TRUE
+
+### Para Fazer
 - [ ] Pretty CLI commands
 
 ### Instalação
@@ -26,7 +52,7 @@ Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e pr
 | php index.php tools seeder "file_name"                          | Creates a new seed file.                            |
 | php index.php tools seed "file_name"                            | Run the specified seed file.                        |
 
-### Exemplo
+### Rodar a MIGRATION
 Em **application/database/migrations** é um arquivo de migração e em **application/database/seeds** é um arquivo semeador criado para este exemplo.
 
 Digite os seguintes comandos em sua CLI:
