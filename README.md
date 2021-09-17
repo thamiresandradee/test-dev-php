@@ -12,7 +12,7 @@ Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e pr
 
 ### Instalação
 1. Clone este repositório
-`` git clone https://github.com/aaron5670/CodeIgniter-3-Database-Migration-and-Seeding.git``
+`` git clone https://github.com/thamiresandradee/arizona-test-dev-php.git``
 2. Instale todos os pacotes necessários com o Composer com sua CLI: `` composer install``.
 3. Configurar **application/config/config.php**.
 4. Configurar **application/config/database.php**.
