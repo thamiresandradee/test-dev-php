@@ -9,29 +9,15 @@ Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e pr
 
 ### Configuração banco de dados / localhost
 - application/config/config.php
-  | $config['base_url'] = 'http://localhost/teste_arizona/'; |
+   - $config['base_url'] = 'http://localhost/teste_arizona/'; |
 
 - application/config/database.php
-  | $db['default'] = array(
-	| 'dsn'	=> '',
-	| 'hostname' => 'localhost',
-	| 'username' => 'root',
-	| 'password' => '',
-	| 'database' => 'test-arizona',
-	| 'dbdriver' => 'mysqli',
-	| 'dbprefix' => '',
-	| 'pconnect' => FALSE,
-	| 'db_debug' => (ENVIRONMENT !== 'production'),
-	| 'cache_on' => FALSE,
-	| 'cachedir' => '',
-	| 'char_set' => 'utf8',
-	| 'dbcollat' => 'utf8_general_ci',
-	| 'swap_pre' => '',
-	| 'encrypt' => FALSE,
-	| 'compress' => FALSE,
-	| 'stricton' => TRUE, // Para hospedagem
-	| 'failover' => array(),
-	| 'save_queries' => TRUE
+  - 'hostname' => 'localhost',
+  - 'username' => 'root',
+  - 'password' => '',
+  - 'database' => 'test-arizona',
+  - 'dbdriver' => 'mysqli',
+  
 
 ### Para Fazer
 - [ ] Pretty CLI commands
