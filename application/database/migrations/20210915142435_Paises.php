@@ -1,6 +1,6 @@
 <?php
 
-class Migration_Categories extends CI_Migration {
+class Migration_Paises extends CI_Migration {
 
 	public function up() {
 		$this->dbforge->add_field(array(
@@ -9,32 +9,27 @@ class Migration_Categories extends CI_Migration {
 				'constraint'     => 11,
 				'auto_increment' => true,
 			),
-			'description'     => array(
+			'sigla'     => array(
 				'type'       => 'VARCHAR',
-				'constraint' => 100,
+				'constraint' => 5,
 			)
 			,
-			'created_from_ip' => array(
+			'nome' => array(
 				'type'       => 'VARCHAR',
 				'constraint' => 100,
 			),
-			'updated_from_ip' => array(
-				'type'       => 'VARCHAR',
-				'constraint' => 100,
-			)
-			,
-			'date_created'    => array(
+			'dt_cadastro'    => array(
 				'type' => 'DATETIME',
 			),
-			'date_updated'    => array(
+			'dt_atualizacao'    => array(
 				'type' => 'DATETIME',
 			),
 		));
 		$this->dbforge->add_key('id', true);
-		$this->dbforge->create_table('categories');
+		$this->dbforge->create_table('paises');
 	}
 
 	public function down() {
-		$this->dbforge->drop_table('categories');
+		$this->dbforge->drop_table('paises');
 	}
 }

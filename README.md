@@ -1,8 +1,8 @@
-# CodeIgniter 3 with Database Migration & Seeding
+# CodeIgniter 3 com migração e propagação de banco de dados
 ## About
-This is a starter template with CodeIgniter 3.1.x and database migration & seeding tools.
+Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e propagação de banco de dados.
 
-### Features
+### Recursos
 - [x] CodeIgniter Migration with CodeIgniter Command Line Interface (CLI)
 - [x] CodeIgniter Database seeding with CodeIgniter Command Line Interface (CLI)
 - [x] [Faker PHP Library](https://github.com/fzaninotto/Faker)
@@ -10,27 +10,27 @@ This is a starter template with CodeIgniter 3.1.x and database migration & seedi
 ### ToDo
 - [ ] Pretty CLI commands
 
-### Installation
-1. Clone this repository
-``git clone https://github.com/aaron5670/CodeIgniter-3-Database-Migration-and-Seeding.git``
-2. Install all required packages with Composer with your CLI: ``composer install``.
-3. Configure **application/config/config.php**.
-4. Configure **application/config/database.php**.
+### Instalação
+1. Clone este repositório
+`` git clone https://github.com/aaron5670/CodeIgniter-3-Database-Migration-and-Seeding.git``
+2. Instale todos os pacotes necessários com o Composer com sua CLI: `` composer install``.
+3. Configurar **application/config/config.php**.
+4. Configurar **application/config/database.php**.
 
 
 ### CLI Commands
-| Available Command Line Interface (CLI) commands | Description                                         |
+| Comandos da interface de linha de comando (CLI) disponíveis | Descrição                                       |
 |-----------------------------------------------------------------|-----------------------------------------------------|
 | php index.php tools migration "file_name"                       | Create new migration file                           |
 | php index.php tools migrate ["version_number"]                  | Run all migrations. The version number is optional. |
 | php index.php tools seeder "file_name"                          | Creates a new seed file.                            |
 | php index.php tools seed "file_name"                            | Run the specified seed file.                        |
 
-### Example
-In **application/database/migrations** is a migrations file and in **application/database/seeds** is a seeder file created for this example.
+### Exemplo
+Em **application/database/migrations** é um arquivo de migração e em **application/database/seeds** é um arquivo semeador criado para este exemplo.
 
-Type the following commands in your CLI:
-1. ``php index.php tools migrate BrandSeeder``
+Digite os seguintes comandos em sua CLI:
+1. ``php index.php tools migrate PaisesSeeder``
 2. ``php index.php tools migrate``
-3. ``php index.php tools seed BrandsSeeder``
-4. Check your database changes :)
+3. ``php index.php tools seed PaisessSeeder``
+4. Verifique as alterações do seu banco de dados
