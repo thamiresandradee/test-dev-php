@@ -9,13 +9,13 @@ Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e pr
 
 ### Configuração banco de dados / localhost
 - application/config/config.php
-   - $config['base_url'] = 'http://localhost/teste_arizona/'; |
+   - $config['base_url'] = 'http://localhost/seuProjeto/'; |
 
 - application/config/database.php
   - 'hostname' => 'localhost',
   - 'username' => 'root',
   - 'password' => '',
-  - 'database' => 'test-arizona',
+  - 'database' => 'test-project',
   - 'dbdriver' => 'mysqli',
   
 
@@ -24,7 +24,7 @@ Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e pr
 
 ### Instalação
 1. Clone este repositório
-`` git clone https://github.com/thamiresandradee/arizona-test-dev-php.git``
+`` git clone https://github.com/thamiresandradee/test-dev-php.git``
 2. Instale todos os pacotes necessários com o Composer com sua CLI: `` composer install``.
 3. Configurar **application/config/config.php**.
 4. Configurar **application/config/database.php**.
