@@ -1,4 +1,4 @@
-# PROJETO - TESTE ARIZONA - CODEIGNITER 3 / MIGRATIONS / SIGLAS_PAISES
+# PROJETO - TESTE DE APLICAÇÃO PARA UMA VAGA - CODEIGNITER 3 / MIGRATIONS / SIGLAS_PAISES
 ## Sobre
 Este é um modelo inicial com CodeIgniter 3.1.x e ferramentas de migração e propagação de banco de dados.
 
